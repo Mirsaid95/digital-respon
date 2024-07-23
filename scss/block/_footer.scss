@@ -1,0 +1,131 @@
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #1B1B1B;
+    margin-top: 50px;
+
+    &__items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__text{
+        width: 100%;
+        img{
+            width: 20%;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+        font-size: 14px;
+    }
+
+    &__lists{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__us{
+        font-size: 22px;
+        color: white;
+    }
+    &__link{
+        color: white;
+        font-size: 14px;
+        &:hover{
+            color: blue;
+        }
+    }
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__cn{
+        font-size: 22px;
+        color: white;
+    }
+    &__list{
+        color: white;
+        font-size: 14px;
+    }
+    &__icon{
+        display: flex;
+        gap: 30px;
+        
+         
+    }
+    .fa-facebook{
+        color: blue;
+    }
+    .fa-instagram{
+        color: crimson;
+    }
+    .fa-twitter{
+        color: rgb(63, 63, 238);
+    }
+    .fa-linkedin{
+        color: rgb(63, 63, 238);
+    }
+    .fa-brands{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        font-size: 16px;
+        
+    }
+    &__end{
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        border-top: 1px solid white;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer{
+
+        &__items{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 50px;
+            padding: 0 50px;
+        }
+
+        &__text{
+            gap: 40px;
+            img{
+                width: 50%;
+                
+            }
+        }
+        &__list{
+            font-size: 16px;
+        }
+        &__us{
+            font-size: 30px;
+        }
+
+        &__icon{
+            display: flex;
+            // flex-wrap: wrap-reverse;
+            // flex-flow: row-reverse;
+            flex-wrap: wrap;
+        }
+        .fa-brands{
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

@@ -1,0 +1,212 @@
+.customer{
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(235, 232, 232);
+    padding-bottom: 30px;
+
+    &__items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    &__title{
+        font-size: 20px;
+        text-align: center;
+    }
+    &__list{
+        text-align: center;
+        font-size: 14px;
+        color: #525252;
+    }
+
+    &__cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 5px;
+        border: 2px solid rgba(0, 0, 0, 0.233);
+        padding: 15px;
+    }
+    &__user-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__user{
+        display: flex;
+        gap: 20px; 
+        align-items: center;
+    }
+    &__user-name{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    &__surname{
+        font-weight: 500;
+        font-size: 14px;
+        color: #4F5665;
+    }
+    &__info{
+        font-size: 16px;
+        color: #525252;
+    }
+    &__grade{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .fa-star{
+            color: gold;
+        }
+    }
+    .two{
+        display: none;
+    }
+    .three{
+        display: none;
+    }
+    &__icon{
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .rd{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: orange;
+        color: white;
+        border-radius: 50%;
+
+        &:hover{
+            transform: scale(1.2);
+            box-shadow: 1px 1px 3px crimson;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .customer{
+
+        &__cards{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        .two{
+            display: block;
+        }
+        &__user{
+            align-items: start;
+        }
+        &__surname{
+            white-space: nowrap;
+        }
+        &__user-name{
+            white-space: nowrap;
+        }
+
+        &__title{
+            font-size: 26px;
+        }
+        &__list{
+            font-size: 16px;
+        }
+
+        &__icon{
+            width: 50%;
+            margin-left: 60%;
+        }
+
+        &__next-previous{
+            width: 100%;
+            display: flex;
+        }
+        
+        &__round{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 50%;
+        }
+        &__long{
+            width: 50px;
+            height: 15px;
+            border-radius: 10px;
+            background-color: orange;
+        }
+    
+        &__rounded{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.158);
+        }
+
+        &__user{
+            width: 100%;
+            img{
+                width: 20%;
+            }
+        }
+        &__user-name{
+            font-size: 22px;
+        }
+        &__surname{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .customer{
+
+        .three{
+            display: block;
+        }
+
+        &__cards{
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        &__title{
+            width: 40%;
+            font-size: 42px
+        }
+        &__list{
+            width: 45%;
+            font-size: 20px;
+        }
+
+        .rd{
+            font-size: 20px;
+            width: 60px;
+            height: 60px;
+        }
+
+        &__user{
+            width: 100%;
+            img{
+                width: 25%;
+            }
+        }
+        &__user-name{
+            font-size: 24px;
+        }
+        &__surname{
+            font-size: 18px;
+        }
+
+    }
+}

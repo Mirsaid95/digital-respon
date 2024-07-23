@@ -1,0 +1,135 @@
+.lorem{
+    width: 100%;
+
+    &__items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &__list{
+        font-size: 14px;
+        color: #525252;
+        text-align: center;
+    }
+
+    &__mail{
+        height: 220px;
+        background-color: #1B1B1B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+    &__stay{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__stay-title{
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &__stay-list{
+        color: white;
+        font-size: 14px;
+    }
+    &__button-mail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 3px;
+        input{
+            border: none;
+        }
+    }
+    &__btn{
+        background-color: #DC7000;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .lorem{
+        &__text{
+            align-items: start;
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__list{
+            font-size: 18px;
+        }
+
+        &__mail{
+            height: 300px;
+            flex-direction: row;
+            text-align: start;
+            padding: 0 50px;
+            justify-content: space-between;
+            border-radius: 10px;
+            
+        }
+        &__stay-title{
+            font-size: 30px;
+        }
+        &__stay-list{
+            font-size: 16px;
+        }
+
+        &__button-mail{
+            width: 400px;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            input{
+                font-size: 16px;
+            }
+        }
+        &__btn{
+            font-size: 16px;
+            padding: 8px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .lorem{
+
+        &__title{
+            font-size: 52px;
+        }
+        &__list{
+            font-size: 22px;
+        }
+        &__stay-title{
+            font-size: 48px;
+        }
+        &__stay-list{
+            font-size: 18px;
+            width: 80%;
+        }
+    }
+}
